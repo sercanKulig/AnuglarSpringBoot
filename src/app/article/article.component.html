@@ -1,0 +1,6 @@
+<div>
+  <button (click)="loadUser()">Load profile</button>
+  <div *ngFor="let articles of article">
+    {{ articles.title }} - {{ articles.category }}
+  </div>
+</div>
