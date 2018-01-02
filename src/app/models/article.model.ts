@@ -2,6 +2,7 @@ export class Article {
   constructor(private _articleId: number, private _title: string, private _category: string) {
   }
 
+
   get articleId(): number {
     return this._articleId;
   }

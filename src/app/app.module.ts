@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import {HttpModule} from '@angular/http';
 import {ArticleService} from './service/article.service';
 import { ArticleComponent } from './article/article.component';
-import {ArticleDataService} from "./dataStorage/article-data.service";
 
 @NgModule({
   declarations: [
@@ -16,7 +15,7 @@ import {ArticleDataService} from "./dataStorage/article-data.service";
     BrowserModule,
     HttpModule
   ],
-  providers: [ArticleService, ArticleDataService],
+  providers: [ArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
